@@ -5,7 +5,9 @@ def addition(nums):
 
     return sum
 
-
+""""
+This is just an example, remove it if not needed!!! ✌️😎
+"""
 if __name__ == "__main__":
-    dataset = list(input())
+    dataset = input().split(" ")
     print(addition(dataset))
