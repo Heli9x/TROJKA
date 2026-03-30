@@ -1,6 +1,8 @@
 def subtraction(nums):
     difference = int(nums[0])
     for num in range(1, len(nums)):
-        difference -= int(num)
+        difference = difference - int(nums[num])
+        #print(difference, nums[num])
+
 
     return difference

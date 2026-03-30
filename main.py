@@ -7,7 +7,7 @@ def choose_operation():
 
 def enter_numbers():
     numbers = input("enter numbers in the following format [1 12 13] without the '[]', this is the same as 1 + 12 + 13\n:")
-    return numbers
+    return numbers.split(" ")
 
 def run_calculation():
     while True:
@@ -23,4 +23,7 @@ def run_calculation():
             elif op == "2":
                 result = subtraction(nums)
 
-            print(result)
+            print(f"Answer is: {result}\n")
+
+if __name__ == "__main__":
+    run_calculation()
