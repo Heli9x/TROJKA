@@ -9,9 +9,12 @@ while True:
     numbers.append(int(x))
     i += 1
 m = 0
-result = 1
-if sign == '*' and i >= 2:
+result = 0
+if sign == '-' and i >= 2:
     while m < i:
-        result = numbers[m] * result
+        if m == 0:
+            result = numbers[m]
+        else:
+            result = result - numbers[m]
         m += 1
 print(result)
